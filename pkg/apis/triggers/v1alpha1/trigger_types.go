@@ -93,6 +93,7 @@ type TriggerInterceptor struct {
 	GitLab    *GitLabInterceptor    `json:"gitlab,omitempty"`
 	CEL       *CELInterceptor       `json:"cel,omitempty"`
 	Bitbucket *BitbucketInterceptor `json:"bitbucket,omitempty"`
+	Gerrit    *GerritInterceptor    `json:"gerrit,omitempty"`
 }
 
 // WebhookInterceptor provides a webhook to intercept and pre-process events
@@ -123,6 +124,12 @@ type GitHubInterceptor struct {
 type GitLabInterceptor struct {
 	SecretRef  *SecretRef `json:"secretRef,omitempty"`
 	EventTypes []string   `json:"eventTypes,omitempty"`
+}
+
+// GerritInterceptor provides a webhook to intercept and pre-process events
+type GerritInterceptor struct {
+	EventType string   `json:"type,omitempty"`
+	Project   string   `json:"project,omitempty"`
 }
 
 // CELInterceptor provides a webhook to intercept and pre-process events

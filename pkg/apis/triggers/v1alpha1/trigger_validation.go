@@ -167,6 +167,11 @@ func (i *TriggerInterceptor) validate(ctx context.Context) (errs *apis.FieldErro
 	//
 	// }
 
+	// No gerrit validation required yet.
+	// if i.Gerrit != nil {
+	//
+	// }
+
 	if i.CEL != nil {
 		if i.CEL.Filter == "" && len(i.CEL.Overlays) == 0 {
 			errs = errs.Also(apis.ErrMultipleOneOf("cel.filter", "cel.overlays"))
