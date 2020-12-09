@@ -1,0 +1,85 @@
+---
+apiVersion: triggers.tekton.dev/v1alpha1
+kind: EventListener
+metadata:
+  name: gerrit-listener-interceptor
+spec:
+  triggers:
+    - name: gerrit-listener
+      interceptors:
+        - gerrit:
+            type: comment-added
+            project: openzero/openzero
+      bindings:
+        - ref: gerrit-pr-binding
+      template:
+        ref: gerrit-template
+  resources:
+    kubernetesResource:
+      spec:
+        template:
+          spec:
+            serviceAccountName: tekton-triggers-gerrit-sa
+            containers:
+              - resources:
+                  requests:
+                    memory: "64Mi"
+                    cpu: "250m"
+                  limits:
+                    memory: "128Mi"
+                    cpu: "500m"
+---
+apiVersion: triggers.tekton.dev/v1alpha1
+kind: TriggerBinding
+metadata:
+  name: gerrit-pr-binding
+spec:
+  params:
+    - name: project
+      value: $(body.project)
+    - name: revision
+      value: $(body.patchSet.revision)
+    - name: ref
+      value: $(body.patchSet.ref)
+
+---
+apiVersion: triggers.tekton.dev/v1alpha1
+kind: TriggerTemplate
+metadata:
+  name: gerrit-template
+spec:
+  params:
+    - name: project
+    - name: revision
+    - name: ref
+  resourcetemplates:
+    - apiVersion: tekton.dev/v1alpha1
+      kind: TaskRun
+      metadata:
+        generateName: gerrit-run-
+      spec:
+        taskSpec:
+          inputs:
+            resources:
+              - name: source
+                type: git
+          steps:
+            - image: ubuntu
+              script: |
+                #! /bin/bash
+                ls -al $(inputs.resources.source.path)
+                ls -al $(inputs.resources.source.project)
+                ls -al $(inputs.resources.source.revision)
+                ls -al $(inputs.resources.source.ref)
+        inputs:
+          resources:
+            - name: source
+              resourceSpec:
+                type: git
+                params:
+                  - name: project
+                    value: $(tt.params.project)
+                  - name: ref
+                    value: $(tt.params.ref)
+                  - name: revision
+                    value: $(tt.params.revision)
