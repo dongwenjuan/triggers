@@ -6,7 +6,7 @@ spec:
   type: git
   params:
   - name: url
-    value: https://github.com/tektoncd/triggers
+    value: https://github.com/dongwenjuan/triggers
   - name: revision
     value: $REPLACE_ME # REPLACE with the commit you want to release
 ---

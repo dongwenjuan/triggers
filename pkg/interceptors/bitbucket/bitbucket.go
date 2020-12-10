@@ -24,8 +24,8 @@ import (
 	"net/http"
 
 	gh "github.com/google/go-github/v31/github"
-	triggersv1 "github.com/tektoncd/triggers/pkg/apis/triggers/v1alpha1"
-	"github.com/tektoncd/triggers/pkg/interceptors"
+	triggersv1 "github.com/dongwenjuan/triggers/pkg/apis/triggers/v1alpha1"
+	"github.com/dongwenjuan/triggers/pkg/interceptors"
 	"go.uber.org/zap"
 	"k8s.io/client-go/kubernetes"
 )

@@ -46,7 +46,7 @@ func Get(ctx context.Context) v1alpha1.EventListenerInformer {
 	untyped := ctx.Value(Key{})
 	if untyped == nil {
 		logging.FromContext(ctx).Panic(
-			"Unable to fetch github.com/tektoncd/triggers/pkg/client/informers/externalversions/triggers/v1alpha1.EventListenerInformer from context.")
+			"Unable to fetch github.com/dongwenjuan/triggers/pkg/client/informers/externalversions/triggers/v1alpha1.EventListenerInformer from context.")
 	}
 	return untyped.(v1alpha1.EventListenerInformer)
 }

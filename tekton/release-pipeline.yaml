@@ -7,7 +7,7 @@ spec:
   params:
   - name: package
     description: package to release
-    default: github.com/tektoncd/triggers
+    default: github.com/dongwenjuan/triggers
   - name: imageRegistry
     default: gcr.io/tekton-releases # TODO: USE SOMETHING ELSE FOR TESTING
   - name: versionTag

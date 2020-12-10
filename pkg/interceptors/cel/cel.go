@@ -31,14 +31,14 @@ import (
 	"github.com/google/cel-go/common/types/ref"
 	"github.com/google/cel-go/common/types/traits"
 	celext "github.com/google/cel-go/ext"
-	"github.com/tektoncd/triggers/pkg/interceptors"
+	"github.com/dongwenjuan/triggers/pkg/interceptors"
 	"github.com/tidwall/sjson"
 	"go.uber.org/zap"
 	"google.golang.org/protobuf/encoding/protojson"
 	"google.golang.org/protobuf/proto"
 	"k8s.io/client-go/kubernetes"
 
-	triggersv1 "github.com/tektoncd/triggers/pkg/apis/triggers/v1alpha1"
+	triggersv1 "github.com/dongwenjuan/triggers/pkg/apis/triggers/v1alpha1"
 )
 
 // Interceptor implements a CEL based interceptor that uses CEL expressions

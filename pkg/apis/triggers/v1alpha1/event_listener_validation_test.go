@@ -482,7 +482,7 @@ func TestEventListenerValidate_error(t *testing.T) {
 			bldr.EventListenerSpec(
 				bldr.EventListenerTrigger("tt", "v1alpha1",
 					bldr.EventListenerTriggerBinding("tb", "", "v1alpha1"),
-					bldr.EventListenerTriggerName("github.com/tektoncd/triggers"),
+					bldr.EventListenerTriggerName("github.com/dongwenjuan/triggers"),
 				))),
 	}, {
 		name: "Triggers name is longer than the allowable label value (63 characters)",

@@ -43,7 +43,7 @@ func Get(ctx context.Context) versioned.Interface {
 	untyped := ctx.Value(Key{})
 	if untyped == nil {
 		logging.FromContext(ctx).Panic(
-			"Unable to fetch github.com/tektoncd/triggers/pkg/client/clientset/versioned.Interface from context.")
+			"Unable to fetch github.com/dongwenjuan/triggers/pkg/client/clientset/versioned.Interface from context.")
 	}
 	return untyped.(versioned.Interface)
 }

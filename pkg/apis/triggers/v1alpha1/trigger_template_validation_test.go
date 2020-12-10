@@ -21,8 +21,8 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/tektoncd/triggers/pkg/apis/triggers/v1alpha1"
-	b "github.com/tektoncd/triggers/test/builder"
+	"github.com/dongwenjuan/triggers/pkg/apis/triggers/v1alpha1"
+	b "github.com/dongwenjuan/triggers/test/builder"
 
 	"k8s.io/apimachinery/pkg/runtime"
 	"knative.dev/pkg/apis"

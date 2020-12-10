@@ -20,8 +20,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/tektoncd/triggers/pkg/apis/triggers/v1alpha1"
-	bldr "github.com/tektoncd/triggers/test/builder"
+	"github.com/dongwenjuan/triggers/pkg/apis/triggers/v1alpha1"
+	bldr "github.com/dongwenjuan/triggers/test/builder"
 )
 
 func Test_TriggerBindingValidate(t *testing.T) {

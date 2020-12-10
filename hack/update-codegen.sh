@@ -29,13 +29,13 @@ GOFLAGS="-mod=vendor"
 #                  k8s.io/kubernetes. The output-base is needed for the generators to output into the vendor dir
 #                  instead of the $GOPATH directly. For normal projects this can be dropped.
 bash ${REPO_ROOT_DIR}/hack/generate-groups.sh "deepcopy,client,informer,lister" \
-  github.com/tektoncd/triggers/pkg/client github.com/tektoncd/triggers/pkg/apis \
+  github.com/dongwenjuan/triggers/pkg/client github.com/dongwenjuan/triggers/pkg/apis \
   triggers:v1alpha1 \
   --go-header-file ${REPO_ROOT_DIR}/hack/boilerplate/boilerplate.go.txt
 
 # Knative Injection
 bash ${REPO_ROOT_DIR}/hack/generate-knative.sh "injection" \
-  github.com/tektoncd/triggers/pkg/client github.com/tektoncd/triggers/pkg/apis \
+  github.com/dongwenjuan/triggers/pkg/client github.com/dongwenjuan/triggers/pkg/apis \
   "triggers:v1alpha1" \
   --go-header-file ${REPO_ROOT_DIR}/hack/boilerplate/boilerplate.go.txt
 GOFLAGS="${OLDGOFLAGS}"

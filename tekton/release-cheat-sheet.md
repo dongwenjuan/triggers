@@ -27,7 +27,7 @@ the triggers repo, a terminal window and a text editor.
       type: git
       params:
       - name: url
-        value: https://github.com/tektoncd/triggers
+        value: https://github.com/dongwenjuan/triggers
       - name: revision
         value: # UPDATE THIS with the COMMIT SHA that you want to release. Example : 33e0847e67fc9804689e50371746c3cdad4b0a9d
     ```
@@ -74,7 +74,7 @@ the triggers repo, a terminal window and a text editor.
       ```bash
       tkn task start \
         -i source=${GIT_RESOURCE_NAME} \
-        -p package=tektoncd/triggers \
+        -p package=dongwenjuan/triggers \
         -p release-tag=${VERSION_TAG} \
         -p previous-release-tag=${PREVIOUS_VERSION_TAG} \
         create-draft-triggers-release

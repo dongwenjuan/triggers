@@ -16,7 +16,7 @@ limitations under the License.
 
 package test
 
-import "github.com/tektoncd/triggers/pkg/apis/triggers/v1alpha1"
+import "github.com/dongwenjuan/triggers/pkg/apis/triggers/v1alpha1"
 
 // CompareParams can be used with comparison options such as `cmpopts.SortSlices`
 // so we can ignore the ordering of params.

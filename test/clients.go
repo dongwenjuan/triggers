@@ -30,7 +30,7 @@ import (
 
 	pipelineclientset "github.com/tektoncd/pipeline/pkg/client/clientset/versioned"
 	resourceclientset "github.com/tektoncd/pipeline/pkg/client/resource/clientset/versioned"
-	triggersclientset "github.com/tektoncd/triggers/pkg/client/clientset/versioned"
+	triggersclientset "github.com/dongwenjuan/triggers/pkg/client/clientset/versioned"
 	"k8s.io/client-go/kubernetes"
 	knativetest "knative.dev/pkg/test"
 )
