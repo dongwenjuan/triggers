@@ -226,6 +226,8 @@ func (r Sink) ExecuteInterceptors(t *triggersv1.EventListenerTrigger, in *http.R
 			interceptor = cel.NewInterceptor(i.CEL, r.KubeClientSet, r.EventListenerNamespace, log)
 		case i.Bitbucket != nil:
 			interceptor = bitbucket.NewInterceptor(i.Bitbucket, r.KubeClientSet, r.EventListenerNamespace, log)
+        case i.Gerrit != nil:
+            interceptor = gerrit.NewInterceptor(i.Gerrit, r.KubeClientSet, r.EventListenerNamespace, log)
 		default:
 			return nil, nil, fmt.Errorf("unknown interceptor type: %v", i)
 		}
