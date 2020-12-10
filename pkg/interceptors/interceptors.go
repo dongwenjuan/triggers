@@ -21,7 +21,7 @@ import (
 	"net/http"
 	"path"
 
-	triggersv1 "github.com/tektoncd/triggers/pkg/apis/triggers/v1alpha1"
+	triggersv1 "github.com/dongwenjuan/triggers/pkg/apis/triggers/v1alpha1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/kubernetes"
 )

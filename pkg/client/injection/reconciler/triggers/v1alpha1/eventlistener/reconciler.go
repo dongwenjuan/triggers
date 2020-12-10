@@ -24,9 +24,9 @@ import (
 	fmt "fmt"
 	reflect "reflect"
 
-	v1alpha1 "github.com/tektoncd/triggers/pkg/apis/triggers/v1alpha1"
-	versioned "github.com/tektoncd/triggers/pkg/client/clientset/versioned"
-	triggersv1alpha1 "github.com/tektoncd/triggers/pkg/client/listers/triggers/v1alpha1"
+	v1alpha1 "github.com/dongwenjuan/triggers/pkg/apis/triggers/v1alpha1"
+	versioned "github.com/dongwenjuan/triggers/pkg/client/clientset/versioned"
+	triggersv1alpha1 "github.com/dongwenjuan/triggers/pkg/client/listers/triggers/v1alpha1"
 	zap "go.uber.org/zap"
 	v1 "k8s.io/api/core/v1"
 	equality "k8s.io/apimachinery/pkg/api/equality"

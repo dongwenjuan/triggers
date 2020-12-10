@@ -19,8 +19,8 @@ package sink
 import (
 	"fmt"
 
-	dynamicClientset "github.com/tektoncd/triggers/pkg/client/dynamic/clientset"
-	"github.com/tektoncd/triggers/pkg/client/dynamic/clientset/tekton"
+	dynamicClientset "github.com/dongwenjuan/triggers/pkg/client/dynamic/clientset"
+	"github.com/dongwenjuan/triggers/pkg/client/dynamic/clientset/tekton"
 	"go.uber.org/zap"
 	discoveryclient "k8s.io/client-go/discovery"
 	"k8s.io/client-go/dynamic"

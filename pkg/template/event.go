@@ -22,7 +22,7 @@ import (
 	"net/http"
 	"strings"
 
-	triggersv1 "github.com/tektoncd/triggers/pkg/apis/triggers/v1alpha1"
+	triggersv1 "github.com/dongwenjuan/triggers/pkg/apis/triggers/v1alpha1"
 )
 
 // ResolveParams takes given triggerbindings and produces the resulting

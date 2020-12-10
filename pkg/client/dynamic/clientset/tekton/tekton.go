@@ -2,7 +2,7 @@ package tekton
 
 import (
 	"github.com/tektoncd/pipeline/pkg/apis/pipeline"
-	"github.com/tektoncd/triggers/pkg/client/dynamic/clientset"
+	"github.com/dongwenjuan/triggers/pkg/client/dynamic/clientset"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/client-go/dynamic"
 )

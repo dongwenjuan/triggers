@@ -20,11 +20,11 @@ import (
 	"context"
 	"os"
 
-	"github.com/tektoncd/triggers/pkg/apis/triggers/v1alpha1"
-	triggersclient "github.com/tektoncd/triggers/pkg/client/injection/client"
-	eventlistenerinformer "github.com/tektoncd/triggers/pkg/client/injection/informers/triggers/v1alpha1/eventlistener"
+	"github.com/dongwenjuan/triggers/pkg/apis/triggers/v1alpha1"
+	triggersclient "github.com/dongwenjuan/triggers/pkg/client/injection/client"
+	eventlistenerinformer "github.com/dongwenjuan/triggers/pkg/client/injection/informers/triggers/v1alpha1/eventlistener"
 
-	eventlistenerreconciler "github.com/tektoncd/triggers/pkg/client/injection/reconciler/triggers/v1alpha1/eventlistener"
+	eventlistenerreconciler "github.com/dongwenjuan/triggers/pkg/client/injection/reconciler/triggers/v1alpha1/eventlistener"
 	"k8s.io/client-go/tools/cache"
 	kubeclient "knative.dev/pkg/client/injection/kube/client"
 	deployinformer "knative.dev/pkg/client/injection/kube/informers/apps/v1/deployment"

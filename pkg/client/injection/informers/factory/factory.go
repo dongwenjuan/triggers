@@ -21,8 +21,8 @@ package factory
 import (
 	context "context"
 
-	externalversions "github.com/tektoncd/triggers/pkg/client/informers/externalversions"
-	client "github.com/tektoncd/triggers/pkg/client/injection/client"
+	externalversions "github.com/dongwenjuan/triggers/pkg/client/informers/externalversions"
+	client "github.com/dongwenjuan/triggers/pkg/client/injection/client"
 	controller "knative.dev/pkg/controller"
 	injection "knative.dev/pkg/injection"
 	logging "knative.dev/pkg/logging"

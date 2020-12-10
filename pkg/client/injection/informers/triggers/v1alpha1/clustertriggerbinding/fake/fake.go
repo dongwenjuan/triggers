@@ -21,8 +21,8 @@ package fake
 import (
 	context "context"
 
-	fake "github.com/tektoncd/triggers/pkg/client/injection/informers/factory/fake"
-	clustertriggerbinding "github.com/tektoncd/triggers/pkg/client/injection/informers/triggers/v1alpha1/clustertriggerbinding"
+	fake "github.com/dongwenjuan/triggers/pkg/client/injection/informers/factory/fake"
+	clustertriggerbinding "github.com/dongwenjuan/triggers/pkg/client/injection/informers/triggers/v1alpha1/clustertriggerbinding"
 	controller "knative.dev/pkg/controller"
 	injection "knative.dev/pkg/injection"
 )

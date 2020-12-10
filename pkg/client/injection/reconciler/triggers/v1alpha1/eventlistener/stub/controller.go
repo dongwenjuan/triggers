@@ -21,8 +21,8 @@ package eventlistener
 import (
 	context "context"
 
-	eventlistener "github.com/tektoncd/triggers/pkg/client/injection/informers/triggers/v1alpha1/eventlistener"
-	v1alpha1eventlistener "github.com/tektoncd/triggers/pkg/client/injection/reconciler/triggers/v1alpha1/eventlistener"
+	eventlistener "github.com/dongwenjuan/triggers/pkg/client/injection/informers/triggers/v1alpha1/eventlistener"
+	v1alpha1eventlistener "github.com/dongwenjuan/triggers/pkg/client/injection/reconciler/triggers/v1alpha1/eventlistener"
 	configmap "knative.dev/pkg/configmap"
 	controller "knative.dev/pkg/controller"
 	logging "knative.dev/pkg/logging"

@@ -19,7 +19,7 @@ package sink
 import (
 	"flag"
 
-	triggersclientset "github.com/tektoncd/triggers/pkg/client/clientset/versioned"
+	triggersclientset "github.com/dongwenjuan/triggers/pkg/client/clientset/versioned"
 	"golang.org/x/xerrors"
 	discoveryclient "k8s.io/client-go/discovery"
 	kubeclientset "k8s.io/client-go/kubernetes"

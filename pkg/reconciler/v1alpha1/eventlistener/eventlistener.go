@@ -25,8 +25,8 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
-	"github.com/tektoncd/triggers/pkg/apis/triggers/v1alpha1"
-	listers "github.com/tektoncd/triggers/pkg/client/listers/triggers/v1alpha1"
+	"github.com/dongwenjuan/triggers/pkg/apis/triggers/v1alpha1"
+	listers "github.com/dongwenjuan/triggers/pkg/client/listers/triggers/v1alpha1"
 	"go.uber.org/zap"
 	"golang.org/x/xerrors"
 	appsv1 "k8s.io/api/apps/v1"
@@ -41,8 +41,8 @@ import (
 	"knative.dev/pkg/logging"
 	pkgreconciler "knative.dev/pkg/reconciler"
 
-	triggersclientset "github.com/tektoncd/triggers/pkg/client/clientset/versioned"
-	eventlistenerreconciler "github.com/tektoncd/triggers/pkg/client/injection/reconciler/triggers/v1alpha1/eventlistener"
+	triggersclientset "github.com/dongwenjuan/triggers/pkg/client/clientset/versioned"
+	eventlistenerreconciler "github.com/dongwenjuan/triggers/pkg/client/injection/reconciler/triggers/v1alpha1/eventlistener"
 	"knative.dev/pkg/ptr"
 )
 

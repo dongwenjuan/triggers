@@ -29,11 +29,11 @@ import (
 	"github.com/google/cel-go/common/types"
 	"github.com/google/cel-go/common/types/ref"
 	"github.com/google/cel-go/interpreter/functions"
-	"github.com/tektoncd/triggers/pkg/interceptors"
+	"github.com/dongwenjuan/triggers/pkg/interceptors"
 	"k8s.io/client-go/kubernetes"
 	"sigs.k8s.io/yaml"
 
-	triggersv1 "github.com/tektoncd/triggers/pkg/apis/triggers/v1alpha1"
+	triggersv1 "github.com/dongwenjuan/triggers/pkg/apis/triggers/v1alpha1"
 	exprpb "google.golang.org/genproto/googleapis/api/expr/v1alpha1"
 )
 

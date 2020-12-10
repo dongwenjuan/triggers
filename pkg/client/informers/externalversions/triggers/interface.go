@@ -19,8 +19,8 @@ limitations under the License.
 package triggers
 
 import (
-	internalinterfaces "github.com/tektoncd/triggers/pkg/client/informers/externalversions/internalinterfaces"
-	v1alpha1 "github.com/tektoncd/triggers/pkg/client/informers/externalversions/triggers/v1alpha1"
+	internalinterfaces "github.com/dongwenjuan/triggers/pkg/client/informers/externalversions/internalinterfaces"
+	v1alpha1 "github.com/dongwenjuan/triggers/pkg/client/informers/externalversions/triggers/v1alpha1"
 )
 
 // Interface provides access to each of this group's versions.

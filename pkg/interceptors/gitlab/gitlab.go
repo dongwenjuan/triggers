@@ -22,9 +22,9 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/tektoncd/triggers/pkg/interceptors"
+	"github.com/dongwenjuan/triggers/pkg/interceptors"
 
-	triggersv1 "github.com/tektoncd/triggers/pkg/apis/triggers/v1alpha1"
+	triggersv1 "github.com/dongwenjuan/triggers/pkg/apis/triggers/v1alpha1"
 
 	"go.uber.org/zap"
 	"k8s.io/client-go/kubernetes"

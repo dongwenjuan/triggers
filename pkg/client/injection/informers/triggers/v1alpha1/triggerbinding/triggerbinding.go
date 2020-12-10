@@ -21,8 +21,8 @@ package triggerbinding
 import (
 	context "context"
 
-	v1alpha1 "github.com/tektoncd/triggers/pkg/client/informers/externalversions/triggers/v1alpha1"
-	factory "github.com/tektoncd/triggers/pkg/client/injection/informers/factory"
+	v1alpha1 "github.com/dongwenjuan/triggers/pkg/client/informers/externalversions/triggers/v1alpha1"
+	factory "github.com/dongwenjuan/triggers/pkg/client/injection/informers/factory"
 	controller "knative.dev/pkg/controller"
 	injection "knative.dev/pkg/injection"
 	logging "knative.dev/pkg/logging"

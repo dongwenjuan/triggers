@@ -24,9 +24,9 @@ import (
 	reflect "reflect"
 	strings "strings"
 
-	versionedscheme "github.com/tektoncd/triggers/pkg/client/clientset/versioned/scheme"
-	client "github.com/tektoncd/triggers/pkg/client/injection/client"
-	eventlistener "github.com/tektoncd/triggers/pkg/client/injection/informers/triggers/v1alpha1/eventlistener"
+	versionedscheme "github.com/dongwenjuan/triggers/pkg/client/clientset/versioned/scheme"
+	client "github.com/dongwenjuan/triggers/pkg/client/injection/client"
+	eventlistener "github.com/dongwenjuan/triggers/pkg/client/injection/informers/triggers/v1alpha1/eventlistener"
 	corev1 "k8s.io/api/core/v1"
 	labels "k8s.io/apimachinery/pkg/labels"
 	types "k8s.io/apimachinery/pkg/types"

@@ -24,9 +24,9 @@ import (
 	"github.com/google/go-cmp/cmp"
 
 	pipelinev1 "github.com/tektoncd/pipeline/pkg/apis/pipeline/v1beta1"
-	triggersv1 "github.com/tektoncd/triggers/pkg/apis/triggers/v1alpha1"
-	"github.com/tektoncd/triggers/test"
-	bldr "github.com/tektoncd/triggers/test/builder"
+	triggersv1 "github.com/dongwenjuan/triggers/pkg/apis/triggers/v1alpha1"
+	"github.com/dongwenjuan/triggers/test"
+	bldr "github.com/dongwenjuan/triggers/test/builder"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"knative.dev/pkg/ptr"
 )

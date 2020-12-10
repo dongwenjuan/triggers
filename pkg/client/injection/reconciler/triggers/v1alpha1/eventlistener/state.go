@@ -21,7 +21,7 @@ package eventlistener
 import (
 	fmt "fmt"
 
-	v1alpha1 "github.com/tektoncd/triggers/pkg/apis/triggers/v1alpha1"
+	v1alpha1 "github.com/dongwenjuan/triggers/pkg/apis/triggers/v1alpha1"
 	types "k8s.io/apimachinery/pkg/types"
 	cache "k8s.io/client-go/tools/cache"
 	reconciler "knative.dev/pkg/reconciler"

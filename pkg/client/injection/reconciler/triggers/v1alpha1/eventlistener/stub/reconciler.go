@@ -21,8 +21,8 @@ package eventlistener
 import (
 	context "context"
 
-	v1alpha1 "github.com/tektoncd/triggers/pkg/apis/triggers/v1alpha1"
-	eventlistener "github.com/tektoncd/triggers/pkg/client/injection/reconciler/triggers/v1alpha1/eventlistener"
+	v1alpha1 "github.com/dongwenjuan/triggers/pkg/apis/triggers/v1alpha1"
+	eventlistener "github.com/dongwenjuan/triggers/pkg/client/injection/reconciler/triggers/v1alpha1/eventlistener"
 	v1 "k8s.io/api/core/v1"
 	reconciler "knative.dev/pkg/reconciler"
 )

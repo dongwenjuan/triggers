@@ -21,7 +21,7 @@ package versioned
 import (
 	"fmt"
 
-	triggersv1alpha1 "github.com/tektoncd/triggers/pkg/client/clientset/versioned/typed/triggers/v1alpha1"
+	triggersv1alpha1 "github.com/dongwenjuan/triggers/pkg/client/clientset/versioned/typed/triggers/v1alpha1"
 	discovery "k8s.io/client-go/discovery"
 	rest "k8s.io/client-go/rest"
 	flowcontrol "k8s.io/client-go/util/flowcontrol"
