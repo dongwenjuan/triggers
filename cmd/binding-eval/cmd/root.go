@@ -28,8 +28,8 @@ import (
 	"sort"
 
 	"github.com/spf13/cobra"
-	"github.com/tektoncd/triggers/pkg/apis/triggers/v1alpha1"
-	"github.com/tektoncd/triggers/pkg/template"
+	"github.com/dongwenjuan/triggers/pkg/apis/triggers/v1alpha1"
+	"github.com/dongwenjuan/triggers/pkg/template"
 	"k8s.io/apimachinery/pkg/runtime/serializer/streaming"
 	"k8s.io/client-go/kubernetes/scheme"
 )

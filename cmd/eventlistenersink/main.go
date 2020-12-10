@@ -25,11 +25,11 @@ import (
 
 	"go.uber.org/zap"
 
-	dynamicClientset "github.com/tektoncd/triggers/pkg/client/dynamic/clientset"
-	"github.com/tektoncd/triggers/pkg/client/dynamic/clientset/tekton"
-	"github.com/tektoncd/triggers/pkg/client/informers/externalversions"
-	triggerLogging "github.com/tektoncd/triggers/pkg/logging"
-	"github.com/tektoncd/triggers/pkg/sink"
+	dynamicClientset "github.com/dongwenjuan/triggers/pkg/client/dynamic/clientset"
+	"github.com/dongwenjuan/triggers/pkg/client/dynamic/clientset/tekton"
+	"github.com/dongwenjuan/triggers/pkg/client/informers/externalversions"
+	triggerLogging "github.com/dongwenjuan/triggers/pkg/logging"
+	"github.com/dongwenjuan/triggers/pkg/sink"
 	"k8s.io/client-go/dynamic"
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/rest"

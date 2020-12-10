@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/tektoncd/triggers/cmd/triggerrun/cmd"
+	"github.com/dongwenjuan/triggers/cmd/triggerrun/cmd"
 	_ "k8s.io/client-go/plugin/pkg/client/auth"
 )
 

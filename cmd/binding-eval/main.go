@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/tektoncd/triggers/cmd/binding-eval/cmd"
+	"github.com/dongwenjuan/triggers/cmd/binding-eval/cmd"
 )
 
 func main() {

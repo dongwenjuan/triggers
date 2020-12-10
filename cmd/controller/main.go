@@ -21,7 +21,7 @@ import (
 	"knative.dev/pkg/injection/sharedmain"
 	"knative.dev/pkg/signals"
 
-	"github.com/tektoncd/triggers/pkg/reconciler/v1alpha1/eventlistener"
+	"github.com/dongwenjuan/triggers/pkg/reconciler/v1alpha1/eventlistener"
 )
 
 const (

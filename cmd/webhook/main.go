@@ -20,7 +20,7 @@ import (
 	"context"
 	"os"
 
-	"github.com/tektoncd/triggers/pkg/apis/triggers/v1alpha1"
+	"github.com/dongwenjuan/triggers/pkg/apis/triggers/v1alpha1"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"knative.dev/pkg/configmap"
 	"knative.dev/pkg/controller"
