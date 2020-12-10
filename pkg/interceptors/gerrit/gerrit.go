@@ -25,7 +25,7 @@ import (
 	"net/http"
 
 	gh "github.com/google/go-github/v31/github"
-	"github.com/sokolovstas/gerrit-ssh"
+	"github.com/dongwenjuan/gerritssh"
 	triggersv1 "github.com/dongwenjuan/triggers/pkg/apis/triggers/v1alpha1"
 	"github.com/dongwenjuan/triggers/pkg/interceptors"
 	"go.uber.org/zap"
