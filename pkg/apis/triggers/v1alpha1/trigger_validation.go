@@ -104,7 +104,7 @@ func (t triggerSpecBindingArray) validate(ctx context.Context) (errs *apis.Field
 }
 
 func (i *TriggerInterceptor) validate(ctx context.Context) (errs *apis.FieldError) {
-	if i.Webhook == nil && i.GitHub == nil && i.GitLab == nil && i.CEL == nil && i.Bitbucket == nil {
+	if i.Webhook == nil && i.GitHub == nil && i.GitLab == nil && i.CEL == nil && i.Bitbucket == nil && i.Gerrit == nil {
 		errs = errs.Also(apis.ErrMissingField("interceptor"))
 	}
 
@@ -120,6 +120,9 @@ func (i *TriggerInterceptor) validate(ctx context.Context) (errs *apis.FieldErro
 		numSet++
 	}
 	if i.Bitbucket != nil {
+		numSet++
+	}
+	if i.Gerrit != nil {
 		numSet++
 	}
 
