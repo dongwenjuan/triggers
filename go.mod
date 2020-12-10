@@ -1,4 +1,4 @@
-module github.com/tektoncd/triggers
+module github.com/dongwenjuan/triggers
 
 go 1.14
 
