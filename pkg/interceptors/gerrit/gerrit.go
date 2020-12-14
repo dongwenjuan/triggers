@@ -21,10 +21,9 @@ import (
 	"errors"
 	"fmt"
 	"io/ioutil"
-	"json"
+	"encoding/json"
 	"net/http"
 
-	gh "github.com/google/go-github/v31/github"
 	"github.com/dongwenjuan/gerritssh"
 	triggersv1 "github.com/dongwenjuan/triggers/pkg/apis/triggers/v1alpha1"
 	"github.com/dongwenjuan/triggers/pkg/interceptors"
@@ -67,7 +66,7 @@ func (w *Interceptor) ExecuteTrigger(request *http.Request) (*http.Response, err
 	}
 
 	// Next see if the event type is in the allow-list
-	if w.Gerrit.EventType != nil || w.Gerrit.Project != nil {
+	if w.Gerrit.EventType != "" || w.Gerrit.Project != "" {
 	    event := gerritssh.StreamEvent{}
 	    err := json.Unmarshal(payload, &event)
 	    if err != nil {

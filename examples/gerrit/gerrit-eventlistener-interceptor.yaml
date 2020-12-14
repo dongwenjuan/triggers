@@ -77,9 +77,9 @@ spec:
               resourceSpec:
                 type: git
                 params:
-                  - name: project
-                    value: $(tt.params.project)
-                  - name: ref
+                  - name: url
+                    value: http://opnfv.zte.com.cn/gerrit/$(tt.params.project)
+                  - name: refspec
                     value: $(tt.params.ref)
                   - name: revision
                     value: $(tt.params.revision)
